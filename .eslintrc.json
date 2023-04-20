@@ -1,3 +1,36 @@
 {
-  "extends": "next/core-web-vitals"
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "indent": "off",
+        "semi": [2, "always"],
+        "space-before-function-paren": "off",
+        "quotes": "off",
+        "camelcase": "warn",
+        "padded-blocks": "off",
+        "no-trailing-spaces": "off",
+        "default-case": "error",
+        "jsx-quotes": ["error", "prefer-double"],
+        "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 2 }],
+        "spaced-comment": "off",
+        "comma-dangle": "off",
+        "multiline-ternary": "off"
+    }
 }
